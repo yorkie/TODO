@@ -56,7 +56,9 @@
 
 - (IBAction)login:(UIButton*)sender
 {
-
+  TDMainViewController * mainViewController = [[TDMainViewController alloc] init];
+  [self loginFadeOut];
+  
   NSString * username = self.username.text;
   NSString * password = self.password.text;
   [OCTClient setClientID:@"c8027b11c34571e54dea"
@@ -69,11 +71,44 @@
       NSLog(@"Successfully");
       NSLog(@"token:%@, username:%@", authenticatedClient.token, username);
       
+      dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:mainViewController animated:YES completion:NULL];
+      });
+      
     } error:^(NSError *error) {
       NSLog(@"Failed");
+      dispatch_async(dispatch_get_main_queue(), ^{
+        [self loginFadeIn];
+      });
     }];
-  TDMainViewController * mainViewController = [[TDMainViewController alloc] init];
-  [self presentViewController:mainViewController animated:YES completion:NULL];
+}
+
+- (void)loginFadeOut {
+  NSTimeInterval animationDuration = 0.75f;
+  [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+  [UIView setAnimationDuration:animationDuration];
+  self.logo.frame = CGRectMake(self.logo.frame.origin.x,
+                               self.logo.frame.origin.y + 50,
+                               self.logo.frame.size.width,
+                               self.logo.frame.size.height);
+  self.username.alpha = 0.0f;
+  self.password.alpha = 0.0f;
+  self.loginButton.alpha = 0.0f;
+  [UIView commitAnimations];
+}
+
+- (void)loginFadeIn {
+  NSTimeInterval animationDuration = 0.75f;
+  [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+  [UIView setAnimationDuration:animationDuration];
+  self.logo.frame = CGRectMake(self.logo.frame.origin.x,
+                               self.logo.frame.origin.y - 50,
+                               self.logo.frame.size.width,
+                               self.logo.frame.size.height);
+  self.username.alpha = 1.0f;
+  self.password.alpha = 1.0f;
+  self.loginButton.alpha = 1.0f;
+  [UIView commitAnimations];
 }
 
 @end
