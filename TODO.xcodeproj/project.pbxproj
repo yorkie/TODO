@@ -19,6 +19,9 @@
 		18EA1F3A190AB49400257B81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EA1F22190AB49400257B81 /* UIKit.framework */; };
 		18EA1F42190AB49400257B81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18EA1F40190AB49400257B81 /* InfoPlist.strings */; };
 		18EA1F44190AB49400257B81 /* TODOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA1F43190AB49400257B81 /* TODOTests.m */; };
+		18EA1F51190ABD4700257B81 /* TDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA1F50190ABD4700257B81 /* TDLoginViewController.m */; };
+		18EA1F56190AC94F00257B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EA1F55190AC94F00257B81 /* Main.storyboard */; };
+		18EA20E8190BA1A500257B81 /* TDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA20E7190BA1A500257B81 /* TDMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,62 @@
 			proxyType = 1;
 			remoteGlobalIDString = 18EA1F1A190AB49400257B81;
 			remoteInfo = TODO;
+		};
+		18EA20F0190BA35F00257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20E9190BA35E00257B81 /* OctoKitDependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0476DBD177916920071F3CB;
+			remoteInfo = "AFNetworking Mac";
+		};
+		18EA20F2190BA35F00257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20E9190BA35E00257B81 /* OctoKitDependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0476DFF177917050071F3CB;
+			remoteInfo = "AFNetworking iOS";
+		};
+		18EA20F4190BA35F00257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20E9190BA35E00257B81 /* OctoKitDependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0476E5E17791AA50071F3CB;
+			remoteInfo = "ISO8601DateFormatter Mac";
+		};
+		18EA20F6190BA35F00257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20E9190BA35E00257B81 /* OctoKitDependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0476E8817791AE70071F3CB;
+			remoteInfo = "ISO8601DateFormatter iOS";
+		};
+		18EA2104190BA3B200257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20FC190BA3B100257B81 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871EA8169E2EFC00016ACA;
+			remoteInfo = "OctoKit Mac";
+		};
+		18EA2106190BA3B200257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20FC190BA3B100257B81 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871EC0169E2EFC00016ACA;
+			remoteInfo = "OctoKit Mac Tests";
+		};
+		18EA2108190BA3B200257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20FC190BA3B100257B81 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871FE4169E309900016ACA;
+			remoteInfo = "OctoKit iOS";
+		};
+		18EA210A190BA3B200257B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EA20FC190BA3B100257B81 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871FF3169E309A00016ACA;
+			remoteInfo = "OctoKit iOS Tests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +107,13 @@
 		18EA1F3F190AB49400257B81 /* TODOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TODOTests-Info.plist"; sourceTree = "<group>"; };
 		18EA1F41190AB49400257B81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18EA1F43190AB49400257B81 /* TODOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TODOTests.m; sourceTree = "<group>"; };
+		18EA1F4F190ABD4700257B81 /* TDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLoginViewController.h; sourceTree = "<group>"; };
+		18EA1F50190ABD4700257B81 /* TDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLoginViewController.m; sourceTree = "<group>"; };
+		18EA1F55190AC94F00257B81 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		18EA20E6190BA1A500257B81 /* TDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDMainViewController.h; sourceTree = "<group>"; };
+		18EA20E7190BA1A500257B81 /* TDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDMainViewController.m; sourceTree = "<group>"; };
+		18EA20E9190BA35E00257B81 /* OctoKitDependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKitDependencies.xcodeproj; path = octokit.objc/External/OctoKitDependencies/OctoKitDependencies.xcodeproj; sourceTree = "<group>"; };
+		18EA20FC190BA3B100257B81 /* OctoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKit.xcodeproj; path = octokit.objc/OctoKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +162,8 @@
 		18EA1F1D190AB49400257B81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18EA20FC190BA3B100257B81 /* OctoKit.xcodeproj */,
+				18EA20E9190BA35E00257B81 /* OctoKitDependencies.xcodeproj */,
 				18EA1F1E190AB49400257B81 /* Foundation.framework */,
 				18EA1F20190AB49400257B81 /* CoreGraphics.framework */,
 				18EA1F22190AB49400257B81 /* UIKit.framework */,
@@ -111,6 +179,11 @@
 				18EA1F2E190AB49400257B81 /* TDAppDelegate.m */,
 				18EA1F30190AB49400257B81 /* Images.xcassets */,
 				18EA1F25190AB49400257B81 /* Supporting Files */,
+				18EA1F4F190ABD4700257B81 /* TDLoginViewController.h */,
+				18EA1F50190ABD4700257B81 /* TDLoginViewController.m */,
+				18EA1F55190AC94F00257B81 /* Main.storyboard */,
+				18EA20E6190BA1A500257B81 /* TDMainViewController.h */,
+				18EA20E7190BA1A500257B81 /* TDMainViewController.m */,
 			);
 			path = TODO;
 			sourceTree = "<group>";
@@ -142,6 +215,28 @@
 				18EA1F40190AB49400257B81 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18EA20EA190BA35E00257B81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EA20F1190BA35F00257B81 /* AFNetworking.framework */,
+				18EA20F3190BA35F00257B81 /* libAFNetworking.a */,
+				18EA20F5190BA35F00257B81 /* ISO8601DateFormatter.framework */,
+				18EA20F7190BA35F00257B81 /* libISO8601DateFormatter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EA20FD190BA3B100257B81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EA2105190BA3B200257B81 /* OctoKit.framework */,
+				18EA2107190BA3B200257B81 /* OctoKit Mac Tests.octest */,
+				18EA2109190BA3B200257B81 /* libOctoKit.a */,
+				18EA210B190BA3B200257B81 /* OctoKit iOS Tests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +302,16 @@
 			mainGroup = 18EA1F12190AB49400257B81;
 			productRefGroup = 18EA1F1C190AB49400257B81 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18EA20FD190BA3B100257B81 /* Products */;
+					ProjectRef = 18EA20FC190BA3B100257B81 /* OctoKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 18EA20EA190BA35E00257B81 /* Products */;
+					ProjectRef = 18EA20E9190BA35E00257B81 /* OctoKitDependencies.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				18EA1F1A190AB49400257B81 /* TODO */,
@@ -215,11 +320,71 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		18EA20F1190BA35F00257B81 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 18EA20F0190BA35F00257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18EA20F3190BA35F00257B81 /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = 18EA20F2190BA35F00257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18EA20F5190BA35F00257B81 /* ISO8601DateFormatter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ISO8601DateFormatter.framework;
+			remoteRef = 18EA20F4190BA35F00257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18EA20F7190BA35F00257B81 /* libISO8601DateFormatter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libISO8601DateFormatter.a;
+			remoteRef = 18EA20F6190BA35F00257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18EA2105190BA3B200257B81 /* OctoKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OctoKit.framework;
+			remoteRef = 18EA2104190BA3B200257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18EA2107190BA3B200257B81 /* OctoKit Mac Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OctoKit Mac Tests.octest";
+			remoteRef = 18EA2106190BA3B200257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18EA2109190BA3B200257B81 /* libOctoKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOctoKit.a;
+			remoteRef = 18EA2108190BA3B200257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18EA210B190BA3B200257B81 /* OctoKit iOS Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OctoKit iOS Tests.octest";
+			remoteRef = 18EA210A190BA3B200257B81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		18EA1F19190AB49400257B81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EA1F56190AC94F00257B81 /* Main.storyboard in Resources */,
 				18EA1F29190AB49400257B81 /* InfoPlist.strings in Resources */,
 				18EA1F31190AB49400257B81 /* Images.xcassets in Resources */,
 			);
@@ -241,6 +406,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EA1F2F190AB49400257B81 /* TDAppDelegate.m in Sources */,
+				18EA20E8190BA1A500257B81 /* TDMainViewController.m in Sources */,
+				18EA1F51190ABD4700257B81 /* TDLoginViewController.m in Sources */,
 				18EA1F2B190AB49400257B81 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +529,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TODO/TODO-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "TODO/TODO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -375,6 +548,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TODO/TODO-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "TODO/TODO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -442,6 +621,7 @@
 				18EA1F49190AB49400257B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18EA1F4A190AB49400257B81 /* Build configuration list for PBXNativeTarget "TODOTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +630,7 @@
 				18EA1F4C190AB49400257B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
