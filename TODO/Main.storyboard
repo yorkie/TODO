@@ -62,13 +62,14 @@
                     <connections>
                         <outlet property="Logo" destination="1A3-HB-VfL" id="dtw-JS-jf4"/>
                         <outlet property="loginButton" destination="s0p-YU-6M0" id="EB1-Un-QrQ"/>
+                        <outlet property="logo" destination="1A3-HB-VfL" id="5Em-HG-FYZ"/>
                         <outlet property="password" destination="iOp-Ql-0Az" id="VG2-44-PEG"/>
                         <outlet property="username" destination="Ly1-gl-b3o" id="4nr-Gn-TdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BY5-V7-hEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-810" y="-30"/>
+            <point key="canvasLocation" x="-514" y="-130"/>
         </scene>
     </scenes>
     <resources>
