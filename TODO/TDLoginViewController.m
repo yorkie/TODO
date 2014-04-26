@@ -57,8 +57,8 @@
 - (IBAction)login:(UIButton*)sender
 {
 
-  NSString * username = @"yorkie";
-  NSString * password = @"lyz900422";
+  NSString * username = self.username.text;
+  NSString * password = self.password.text;
   [OCTClient setClientID:@"c8027b11c34571e54dea"
             clientSecret:@"358fdaf2d9882b078b72143fe8d658c8170a4dcf"];
   OCTUser *user = [OCTUser userWithRawLogin:username server:OCTServer.dotComServer];
