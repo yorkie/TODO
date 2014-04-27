@@ -28,6 +28,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.password.secureTextEntry = YES;
   self.loginButton.layer.cornerRadius = 5;
 }
 
@@ -68,9 +69,6 @@
     signInAsUser:user password:password oneTimePassword:nil scopes:OCTClientAuthorizationScopesUser]
     subscribeNext:^(OCTClient *authenticatedClient) {
       // Authenticated successfully
-      NSLog(@"Successfully");
-      NSLog(@"token:%@, username:%@", authenticatedClient.token, username);
-      
       dispatch_async(dispatch_get_main_queue(), ^{
         [self presentViewController:mainViewController animated:YES completion:NULL];
       });
