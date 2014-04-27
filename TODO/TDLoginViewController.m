@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Yorkie Neil. All rights reserved.
 //
 
-#import <CoreData/CoreData.h>
 #import "Octokit/Octokit.h"
 #import "TDLoginViewController.h"
 #import "TDFeedsViewController.h"
@@ -48,11 +47,17 @@
 
 - (IBAction)login:(UIButton*)sender
 {
-  TDFeedsViewController * feedsViewController = [[TDFeedsViewController alloc] init];
-  [self loginFadeOut];
-  
   NSString *username = self.username.text;
   NSString *password = self.password.text;
+  // validation for form
+  if ([username  isEqual: @""] || [password isEqual: @""]) {
+    [[[UIAlertView alloc] initWithTitle:@"invalid input" message:@"username/password required" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:nil] show];
+    return;
+  }
+  
+  [self loginFadeOut];
+  TDFeedsViewController * feedsViewController = [[TDFeedsViewController alloc] init];
+  
   [OCTClient setClientID:@"c8027b11c34571e54dea"
             clientSecret:@"358fdaf2d9882b078b72143fe8d658c8170a4dcf"];
   OCTUser *user = [OCTUser userWithRawLogin:username server:OCTServer.dotComServer];
