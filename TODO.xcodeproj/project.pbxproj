@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		181FADDE190CDF620089976A /* TDFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FADDD190CDF620089976A /* TDFeedsViewController.m */; };
-		18453338190BECFF0007B2C1 /* libOctoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 184532FA190BEC910007B2C1 /* libOctoKit.a */; };
+		181FAE0E190D09AB0089976A /* libOctoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181FAE0B190D099E0089976A /* libOctoKit.a */; };
 		18453340190BF33C0007B2C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1845333F190BF33C0007B2C1 /* SystemConfiguration.framework */; };
 		18453342190BF3620007B2C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18453341190BF3620007B2C1 /* MobileCoreServices.framework */; };
 		18453343190BF4530007B2C1 /* libISO8601DateFormatter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1845330B190BECBF0007B2C1 /* libISO8601DateFormatter.a */; };
@@ -27,34 +27,33 @@
 		18EA1F44190AB49400257B81 /* TODOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA1F43190AB49400257B81 /* TODOTests.m */; };
 		18EA1F51190ABD4700257B81 /* TDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA1F50190ABD4700257B81 /* TDLoginViewController.m */; };
 		18EA1F56190AC94F00257B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EA1F55190AC94F00257B81 /* Main.storyboard */; };
-		18EA20E8190BA1A500257B81 /* TDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA20E7190BA1A500257B81 /* TDMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		184532F5190BEC910007B2C1 /* PBXContainerItemProxy */ = {
+		181FAE06190D099E0089976A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 184532ED190BEC900007B2C1 /* OctoKit.xcodeproj */;
+			containerPortal = 181FADFE190D099D0089976A /* OctoKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D0871EA8169E2EFC00016ACA;
 			remoteInfo = "OctoKit Mac";
 		};
-		184532F7190BEC910007B2C1 /* PBXContainerItemProxy */ = {
+		181FAE08190D099E0089976A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 184532ED190BEC900007B2C1 /* OctoKit.xcodeproj */;
+			containerPortal = 181FADFE190D099D0089976A /* OctoKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D0871EC0169E2EFC00016ACA;
 			remoteInfo = "OctoKit Mac Tests";
 		};
-		184532F9190BEC910007B2C1 /* PBXContainerItemProxy */ = {
+		181FAE0A190D099E0089976A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 184532ED190BEC900007B2C1 /* OctoKit.xcodeproj */;
+			containerPortal = 181FADFE190D099D0089976A /* OctoKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D0871FE4169E309900016ACA;
 			remoteInfo = "OctoKit iOS";
 		};
-		184532FB190BEC910007B2C1 /* PBXContainerItemProxy */ = {
+		181FAE0C190D099E0089976A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 184532ED190BEC900007B2C1 /* OctoKit.xcodeproj */;
+			containerPortal = 181FADFE190D099D0089976A /* OctoKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D0871FF3169E309A00016ACA;
 			remoteInfo = "OctoKit iOS Tests";
@@ -183,7 +182,7 @@
 /* Begin PBXFileReference section */
 		181FADDC190CDF620089976A /* TDFeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDFeedsViewController.h; sourceTree = "<group>"; };
 		181FADDD190CDF620089976A /* TDFeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDFeedsViewController.m; sourceTree = "<group>"; };
-		184532ED190BEC900007B2C1 /* OctoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKit.xcodeproj; path = octokit.objc/OctoKit.xcodeproj; sourceTree = "<group>"; };
+		181FADFE190D099D0089976A /* OctoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKit.xcodeproj; path = octokit.objc/OctoKit.xcodeproj; sourceTree = "<group>"; };
 		184532FD190BECBF0007B2C1 /* OctoKitDependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKitDependencies.xcodeproj; path = octokit.objc/External/OctoKitDependencies/OctoKitDependencies.xcodeproj; sourceTree = "<group>"; };
 		1845330C190BECCC0007B2C1 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = octokit.objc/External/Mantle/Mantle.xcodeproj; sourceTree = "<group>"; };
 		1845331E190BECED0007B2C1 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = octokit.objc/External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
@@ -210,8 +209,6 @@
 		18EA1F4F190ABD4700257B81 /* TDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLoginViewController.h; sourceTree = "<group>"; };
 		18EA1F50190ABD4700257B81 /* TDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLoginViewController.m; sourceTree = "<group>"; };
 		18EA1F55190AC94F00257B81 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		18EA20E6190BA1A500257B81 /* TDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDMainViewController.h; sourceTree = "<group>"; };
-		18EA20E7190BA1A500257B81 /* TDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,8 +216,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181FAE0E190D09AB0089976A /* libOctoKit.a in Frameworks */,
 				18453344190BF50E0007B2C1 /* libAFNetworking.a in Frameworks */,
-				18453338190BECFF0007B2C1 /* libOctoKit.a in Frameworks */,
 				18453343190BF4530007B2C1 /* libISO8601DateFormatter.a in Frameworks */,
 				18453342190BF3620007B2C1 /* MobileCoreServices.framework in Frameworks */,
 				18453340190BF33C0007B2C1 /* SystemConfiguration.framework in Frameworks */,
@@ -243,13 +240,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		184532EE190BEC900007B2C1 /* Products */ = {
+		181FADFF190D099D0089976A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				184532F6190BEC910007B2C1 /* OctoKit.framework */,
-				184532F8190BEC910007B2C1 /* OctoKit Mac Tests.octest */,
-				184532FA190BEC910007B2C1 /* libOctoKit.a */,
-				184532FC190BEC910007B2C1 /* OctoKit iOS Tests.octest */,
+				181FAE07190D099E0089976A /* OctoKit.framework */,
+				181FAE09190D099E0089976A /* OctoKit Mac Tests.octest */,
+				181FAE0B190D099E0089976A /* libOctoKit.a */,
+				181FAE0D190D099E0089976A /* OctoKit iOS Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,6 +310,7 @@
 		18EA1F1D190AB49400257B81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				181FADFE190D099D0089976A /* OctoKit.xcodeproj */,
 				18453341190BF3620007B2C1 /* MobileCoreServices.framework */,
 				1845333F190BF33C0007B2C1 /* SystemConfiguration.framework */,
 				1845333C190BF02E0007B2C1 /* Security.framework */,
@@ -320,7 +318,6 @@
 				1845331E190BECED0007B2C1 /* ReactiveCocoa.xcodeproj */,
 				1845330C190BECCC0007B2C1 /* Mantle.xcodeproj */,
 				184532FD190BECBF0007B2C1 /* OctoKitDependencies.xcodeproj */,
-				184532ED190BEC900007B2C1 /* OctoKit.xcodeproj */,
 				18EA1F1E190AB49400257B81 /* Foundation.framework */,
 				18EA1F20190AB49400257B81 /* CoreGraphics.framework */,
 				18EA1F22190AB49400257B81 /* UIKit.framework */,
@@ -339,8 +336,6 @@
 				18EA1F4F190ABD4700257B81 /* TDLoginViewController.h */,
 				18EA1F50190ABD4700257B81 /* TDLoginViewController.m */,
 				18EA1F55190AC94F00257B81 /* Main.storyboard */,
-				18EA20E6190BA1A500257B81 /* TDMainViewController.h */,
-				18EA20E7190BA1A500257B81 /* TDMainViewController.m */,
 				181FADDC190CDF620089976A /* TDFeedsViewController.h */,
 				181FADDD190CDF620089976A /* TDFeedsViewController.m */,
 			);
@@ -445,8 +440,8 @@
 					ProjectRef = 1845330C190BECCC0007B2C1 /* Mantle.xcodeproj */;
 				},
 				{
-					ProductGroup = 184532EE190BEC900007B2C1 /* Products */;
-					ProjectRef = 184532ED190BEC900007B2C1 /* OctoKit.xcodeproj */;
+					ProductGroup = 181FADFF190D099D0089976A /* Products */;
+					ProjectRef = 181FADFE190D099D0089976A /* OctoKit.xcodeproj */;
 				},
 				{
 					ProductGroup = 184532FE190BECBF0007B2C1 /* Products */;
@@ -466,32 +461,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		184532F6190BEC910007B2C1 /* OctoKit.framework */ = {
+		181FAE07190D099E0089976A /* OctoKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = OctoKit.framework;
-			remoteRef = 184532F5190BEC910007B2C1 /* PBXContainerItemProxy */;
+			remoteRef = 181FAE06190D099E0089976A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		184532F8190BEC910007B2C1 /* OctoKit Mac Tests.octest */ = {
+		181FAE09190D099E0089976A /* OctoKit Mac Tests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "OctoKit Mac Tests.octest";
-			remoteRef = 184532F7190BEC910007B2C1 /* PBXContainerItemProxy */;
+			remoteRef = 181FAE08190D099E0089976A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		184532FA190BEC910007B2C1 /* libOctoKit.a */ = {
+		181FAE0B190D099E0089976A /* libOctoKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libOctoKit.a;
-			remoteRef = 184532F9190BEC910007B2C1 /* PBXContainerItemProxy */;
+			remoteRef = 181FAE0A190D099E0089976A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		184532FC190BEC910007B2C1 /* OctoKit iOS Tests.octest */ = {
+		181FAE0D190D099E0089976A /* OctoKit iOS Tests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "OctoKit iOS Tests.octest";
-			remoteRef = 184532FB190BEC910007B2C1 /* PBXContainerItemProxy */;
+			remoteRef = 181FAE0C190D099E0089976A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		18453305190BECBF0007B2C1 /* AFNetworking.framework */ = {
@@ -636,7 +631,6 @@
 			files = (
 				181FADDE190CDF620089976A /* TDFeedsViewController.m in Sources */,
 				18EA1F2F190AB49400257B81 /* TDAppDelegate.m in Sources */,
-				18EA20E8190BA1A500257B81 /* TDMainViewController.m in Sources */,
 				18EA1F51190ABD4700257B81 /* TDLoginViewController.m in Sources */,
 				18EA1F2B190AB49400257B81 /* main.m in Sources */,
 			);

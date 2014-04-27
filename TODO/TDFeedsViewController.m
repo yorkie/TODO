@@ -16,23 +16,22 @@
   NSArray *feeds;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-  if (self) {
-      // Custom initialization
-  }
+  feeds = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
   return self;
 }
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  feeds = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
   
-  self.tableView.rowHeight = 75;
+  self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
   self.tableView.dataSource = self;
   self.tableView.delegate = self;
+  
+  [self.view setBackgroundColor:[UIColor whiteColor]];
+  [self.view addSubview:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,8 +52,6 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
   }
   cell.textLabel.text = [feeds objectAtIndex:indexPath.row];
-  
-  NSLog(@"%@", cell.textLabel.text);
   return cell;
 }
 

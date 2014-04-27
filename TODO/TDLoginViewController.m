@@ -8,22 +8,13 @@
 
 #import "Octokit/Octokit.h"
 #import "TDLoginViewController.h"
-#import "TDMainViewController.h"
+#import "TDFeedsViewController.h"
 
 @interface TDLoginViewController ()
 
 @end
 
 @implementation TDLoginViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-  if (self) {
-    // Custom initialization
-  }
-  return self;
-}
 
 - (void)viewDidLoad
 {
@@ -35,7 +26,6 @@
 - (void)didReceiveMemoryWarning
 {
   [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)inputDidBeginEditing:(UITextField*)sender
@@ -57,7 +47,7 @@
 
 - (IBAction)login:(UIButton*)sender
 {
-  TDMainViewController * mainViewController = [[TDMainViewController alloc] init];
+  TDFeedsViewController * feedsViewController = [[TDFeedsViewController alloc] init];
   [self loginFadeOut];
   
   NSString * username = self.username.text;
@@ -69,8 +59,18 @@
     signInAsUser:user password:password oneTimePassword:nil scopes:OCTClientAuthorizationScopesUser]
     subscribeNext:^(OCTClient *authenticatedClient) {
       // Authenticated successfully
+      RACSignal * listFeeds = [authenticatedClient listFeeds];
+      [listFeeds subscribeNext:^(OCTFeed *feed) {
+        NSLog(@"timeline url: %@", [feed.timelineURL absoluteString]);
+        NSLog(@"user url: %@", [feed.userURL absoluteString]);
+        NSLog(@"current user url: %@", [feed.currentUserURL absoluteString]);
+        NSLog(@"current user public url: %@", [feed.currentUserPublicURL absoluteString]);
+        NSLog(@"current user actor url: %@", [feed.currentUserActorURL absoluteString]);
+        NSLog(@"current user org url: %@", [feed.currentUserOrgURL absoluteString]);
+      }];
+      
       dispatch_async(dispatch_get_main_queue(), ^{
-        [self presentViewController:mainViewController animated:YES completion:NULL];
+        [self presentViewController:feedsViewController animated:YES completion:NULL];
       });
       
     } error:^(NSError *error) {

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TDFeedsViewController : UITableViewController
+@interface TDFeedsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

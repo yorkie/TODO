@@ -51,6 +51,7 @@
 #import <OctoKit/OCTBranch.h>
 #import <OctoKit/OCTGitCommit.h>
 #import <OctoKit/OCTGitCommitFile.h>
+#import <OctoKit/OCTFeed.h>
 
 // OCTClient categories
 #import <OctoKit/OCTClient.h>
@@ -63,3 +64,4 @@
 #import <OctoKit/OCTClient+Repositories.h>
 #import <OctoKit/OCTClient+User.h>
 #import <OctoKit/OCTClient+Activity.h>
+#import <OctoKit/OCTClient+Feed.h>
