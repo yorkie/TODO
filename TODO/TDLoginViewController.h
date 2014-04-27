@@ -10,6 +10,7 @@
 
 @interface TDLoginViewController : UIViewController
 
+// ui elements
 @property (strong, nonatomic) IBOutlet UIImageView *logo;
 @property (strong, nonatomic) IBOutlet UITextField *username;
 @property (strong, nonatomic) IBOutlet UITextField *password;

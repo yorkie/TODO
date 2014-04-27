@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		181FADDE190CDF620089976A /* TDFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FADDD190CDF620089976A /* TDFeedsViewController.m */; };
 		181FAE0E190D09AB0089976A /* libOctoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181FAE0B190D099E0089976A /* libOctoKit.a */; };
+		181FAE25190D39B20089976A /* user.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181FAE23190D39B20089976A /* user.xcdatamodeld */; };
 		18453340190BF33C0007B2C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1845333F190BF33C0007B2C1 /* SystemConfiguration.framework */; };
 		18453342190BF3620007B2C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18453341190BF3620007B2C1 /* MobileCoreServices.framework */; };
 		18453343190BF4530007B2C1 /* libISO8601DateFormatter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1845330B190BECBF0007B2C1 /* libISO8601DateFormatter.a */; };
@@ -183,6 +184,7 @@
 		181FADDC190CDF620089976A /* TDFeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDFeedsViewController.h; sourceTree = "<group>"; };
 		181FADDD190CDF620089976A /* TDFeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDFeedsViewController.m; sourceTree = "<group>"; };
 		181FADFE190D099D0089976A /* OctoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKit.xcodeproj; path = octokit.objc/OctoKit.xcodeproj; sourceTree = "<group>"; };
+		181FAE24190D39B20089976A /* user.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = user.xcdatamodel; sourceTree = "<group>"; };
 		184532FD190BECBF0007B2C1 /* OctoKitDependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKitDependencies.xcodeproj; path = octokit.objc/External/OctoKitDependencies/OctoKitDependencies.xcodeproj; sourceTree = "<group>"; };
 		1845330C190BECCC0007B2C1 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = octokit.objc/External/Mantle/Mantle.xcodeproj; sourceTree = "<group>"; };
 		1845331E190BECED0007B2C1 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = octokit.objc/External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				18EA1F55190AC94F00257B81 /* Main.storyboard */,
 				181FADDC190CDF620089976A /* TDFeedsViewController.h */,
 				181FADDD190CDF620089976A /* TDFeedsViewController.m */,
+				181FAE23190D39B20089976A /* user.xcdatamodeld */,
 			);
 			path = TODO;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				18EA1F2F190AB49400257B81 /* TDAppDelegate.m in Sources */,
 				18EA1F51190ABD4700257B81 /* TDLoginViewController.m in Sources */,
 				18EA1F2B190AB49400257B81 /* main.m in Sources */,
+				181FAE25190D39B20089976A /* user.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,6 +865,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		181FAE23190D39B20089976A /* user.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				181FAE24190D39B20089976A /* user.xcdatamodel */,
+			);
+			currentVersion = 181FAE24190D39B20089976A /* user.xcdatamodel */;
+			path = user.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18EA1F13190AB49400257B81 /* Project object */;
 }

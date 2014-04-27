@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Yorkie Neil. All rights reserved.
 //
 
+#import <CoreData/CoreData.h>
 #import "Octokit/Octokit.h"
 #import "TDLoginViewController.h"
 #import "TDFeedsViewController.h"
@@ -50,8 +51,8 @@
   TDFeedsViewController * feedsViewController = [[TDFeedsViewController alloc] init];
   [self loginFadeOut];
   
-  NSString * username = self.username.text;
-  NSString * password = self.password.text;
+  NSString *username = self.username.text;
+  NSString *password = self.password.text;
   [OCTClient setClientID:@"c8027b11c34571e54dea"
             clientSecret:@"358fdaf2d9882b078b72143fe8d658c8170a4dcf"];
   OCTUser *user = [OCTUser userWithRawLogin:username server:OCTServer.dotComServer];
@@ -59,22 +60,12 @@
     signInAsUser:user password:password oneTimePassword:nil scopes:OCTClientAuthorizationScopesUser]
     subscribeNext:^(OCTClient *authenticatedClient) {
       // Authenticated successfully
-      RACSignal * listFeeds = [authenticatedClient listFeeds];
-      [listFeeds subscribeNext:^(OCTFeed *feed) {
-        NSLog(@"timeline url: %@", [feed.timelineURL absoluteString]);
-        NSLog(@"user url: %@", [feed.userURL absoluteString]);
-        NSLog(@"current user url: %@", [feed.currentUserURL absoluteString]);
-        NSLog(@"current user public url: %@", [feed.currentUserPublicURL absoluteString]);
-        NSLog(@"current user actor url: %@", [feed.currentUserActorURL absoluteString]);
-        NSLog(@"current user org url: %@", [feed.currentUserOrgURL absoluteString]);
-      }];
-      
       dispatch_async(dispatch_get_main_queue(), ^{
         [self presentViewController:feedsViewController animated:YES completion:NULL];
       });
       
     } error:^(NSError *error) {
-      NSLog(@"Failed");
+      sleep(1);
       dispatch_async(dispatch_get_main_queue(), ^{
         [self loginFadeIn];
       });
@@ -108,5 +99,5 @@
   self.loginButton.alpha = 1.0f;
   [UIView commitAnimations];
 }
-
+          
 @end
